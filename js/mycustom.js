@@ -37,4 +37,22 @@ $(document).ready(function(){
 	$('.spinner').fadeOut('slow');
 	$('.preloader').delay(350).fadeOut('slow');
 
+//google map
+	$(".gmap").gMap({
+		controls: false,
+		scrollwheel: false,
+		draggable: true,
+		markers: [{ latitude: 45.256,
+					longitude: 19.845
+				}],
+		icon: { image: "/img/map-pin.png",
+				iconsize: [32, 48],
+				iconanchor: [16, 24],
+				infowindowanchor: [0, 0]
+			},
+		latitude: 45.256,
+		longitude: 19.845,
+		zoom: 15
+	});
 });
+

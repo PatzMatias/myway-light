@@ -830,3 +830,152 @@ p.header {
 		box-shadow: 0 5px 0 rgba(0, 140, 186, 1);
 	}
 }
+
+/*************
+	Contact
+**************/
+.gmap {
+	height: 350px;
+}
+
+
+@media (max-width: 568px){
+	.gmap {
+		height: 200px;
+	}
+}
+
+#contact  {
+	background: #fff;
+}
+
+.form-control, .form-control:focus {
+	color: #25272B;
+	border: 0;
+	outline: none;
+	resize: none;
+	background: #eeeff2;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	border: 0;
+}
+
+.form-group {
+	margin-top: 5%;
+}
+
+@media (min-width: 768px) {
+	.form-group {
+		display: inline-block;
+	}
+}
+
+.form-group, label {
+	font-weight: 400;
+	line-height: 1.2;
+}
+
+form .btn {
+	background: #008cba;
+	color: #fff;
+	display: inline-block;
+	margin: 0;
+	-webkit-transition: all .1s linear;
+	-moz-transition: all .1s linear;
+	-o-transition: all .1s linear;
+	transition: all .1s linear;
+}
+
+form .btn:hover {
+	background: #0079ad;
+	color: #fff;
+}
+
+form .btn:focus {
+	background: #008cba;
+	color: #fff;
+	outline: 0 auto transparent;
+	outline-offset: -2px;
+}
+
+.flowuplabels .fl_wrap {
+	height: 45px;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.flowuplabels .fl_label {
+	top: 12px;
+	position: absolute;
+	z-index: 3;
+	-webkit-transition: all .1s linear;
+	-moz-transition: all .1s linear;
+	-o-transition: all .1s linear;
+	transition: all .1s linear;
+}
+
+.flowuplabels .fl_input {
+	background: none;
+	border: none;
+	border-bottom: 2px solid #f1f2f3;
+	border-radius: 0;
+	padding: 13px 0 0 0;
+	z-index: 2;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+ 
+.flowuplabels .fl_wrap.focused .fl_label,
+.flowuplabels .fl_wrap.populated .fl_label {
+	top: -5px;
+	font-size: 12px;
+}
+
+.flowuplabels .fl_wrap.focused .fl_label {
+	color: #008cba;
+}
+
+.message {
+	display: none;
+}
+
+#form-alert {
+	padding: 5px 15px 5px 15px;
+	margin: 15px 0 0 0;
+}
+
+.alert li {
+	list-style: none;
+	display: inline-block;
+}
+
+.alert-danger {
+	border-width: 1px;
+	border-radius: 0;
+	color: #b94a48;
+}
+
+.alert-succes {
+	border-width: 1px;
+	border-radius: 0;
+	color: #468847;
+}

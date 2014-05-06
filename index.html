@@ -480,7 +480,33 @@
 			<div class="gmap"></div>
 		</div>
 		<section id="contact">
+			<div class="container">
+				<div class="row divide">
+					<form action="/js/sendmail.php" class="form-inline flowuplabels" role="form" method="post" id="messageForm">
+						<div class="form-group col-md-3 col-sm-6 fl_wrap">
+							<label class="fl_label" for="name">Name:</label>
+							<input type="text" name="name" value="" id="name" class="form-control fl_input">
+						</div>
+						<div class="form-group col-md-3 col-sm-6 fl_wrap">
+							<label class="fl_label" for="email">Email:</label>
+							<input type="text" name="email" value="" id="name" class="form-control fl_input">
+						</div>
 
+						<div class="form-group col-md-3 col-sm-6 fl_wrap">
+							<label class="fl_label" for="message">Message:</label>
+							<input type="text" name="message" value="" id="name" class="form-control fl_input">
+						</div>
+						<div class="form-group col-md-3 col-sm-6 fl_wrap">
+							<button type="submit" value="Send" id="submit" class="btn btn-fancy btn-block">Send</button>
+						</div>
+						<div class="form-group col-xs-12">
+							<div class="message">
+								<div class="alert"></div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
 		</section>
 
 		<!-- END CONTACT -->
@@ -490,6 +516,8 @@
 		<script src="/js/mycustom.js"></script>
 		<script src="/js/jquery.form.js"></script>
 		<script src="/js/jquery.flowuplabels.js"></script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+		<script src="/js/jquery.gmap.js"></script>
 
 </body>
 </html>

@@ -1010,3 +1010,8 @@ p.header {
   top: -5px;
   box-shadow: 0 5px 0 #008cba;
 }
+
+/* line 834, ../sass/style.scss */
+.gmap {
+  height: 350px;
+}
