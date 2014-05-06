@@ -1,12 +1,12 @@
 $(document).ready(function(){
 	'use strict';
 
-	$(function(){
+/*	$(function(){
 		$('#intro .item').css({'height':($(window).height())+'px'});
 		$(window).resize(function(){
 		$('#intro .item').css({'height':($(window).height())+'px'});
 		});
-	});
+	});*/
 
 //intro text slider
 //

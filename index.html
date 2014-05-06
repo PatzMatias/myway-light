@@ -18,7 +18,8 @@
 	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="61">
-
+		
+		<!-- START LOADING ANIMATION -->
 		<div class="preloader">
 			<div class="spinner">
 				<div class="bounce1"></div>
@@ -26,7 +27,9 @@
 				<div class="bounce3"></div>
 			</div>
 		</div>
+		<!-- END LOADING ANIMATION -->
 
+		<!-- START NAVIGATION -->
 		<div class="navbar navbar-default navbar-fixed-top" role="navigation" data-start="background: rgba(255, 255, 255, .0); padding: 20px 0px;" data-90p="background: rgba(255, 255, 255, 1); padding: 5px 0px;">
 			<div class="container">
 				<div class="navbar-header">
@@ -37,7 +40,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="#intro">
-						<img src="img/logo.png" alt="" class="img-responsive">
+						<img src="img/logo.png" alt="logo.png" class="img-responsive">
 					</a>
 				</div>
 				<div class="collapse navbar-collapse" id="navbar-collapse">
@@ -52,28 +55,28 @@
 				</div>
 			</div>
 		</div>
+		<!-- END NAVIGATION -->
+		<!-- START INTRO -->
 		<section id="intro" data-start="background-position: 50% 0px;" data-90p="background-position: 50% 200px;">
-			<div class="container-fluid">
+			<div class="container-fluid text-center">
 				<div class="row">
 					<div class="col-xs-8 col-xs-offset-2">
-						<div class="carousel-inner">
-							<div id="carousel_fade_intro" class="carousel slide">
-								<div class="carousel-inner">
-									<div class="active item">
-										<h1>Multi-purpose template</h1>
-									</div>
-									<div class="item">
-											<h1>designed for portfolio, agency</h1>
-									</div>
-									<div class="item">
-											<h1>or landing page.</h1>
-									</div>
-									<div class="item">
-											<h1>It's easy to customize</h1>
-									</div>
-									<div class="item">
-											<h1>to fit any brand.</h1>
-									</div>
+						<div id="carousel_fade_intro" class="carousel slide">
+							<div class="carousel-inner">
+								<div class="active item">
+									<h1>Multi-purpose template</h1>
+								</div>
+								<div class="item">
+									<h1>designed for portfolio, agency</h1>
+								</div>
+								<div class="item">
+									<h1>or landing page.</h1>
+								</div>
+								<div class="item">
+									<h1>It's easy to customize</h1>
+								</div>
+								<div class="item">
+									<h1>to fit any brand.</h1>
 								</div>
 							</div>
 						</div>
@@ -86,7 +89,9 @@
 				</a>
 			</span>
 		</section>
+		<!-- END INTRO -->
 
+		<!-- START SERVICES -->
 		<section id="services">
 			<div class="container">
 				<div class="row divide">
@@ -104,7 +109,6 @@
 							</div>
 						</div>
 					</div>
-
 					<div class="col-sm-3">
 						<div class="thumbnail">
 							<div class="myway-icon-services">
@@ -119,7 +123,6 @@
 							</div>
 						</div>
 					</div>
-
 					<div class="col-sm-3">
 						<div class="thumbnail">
 							<div class="myway-icon-services">
@@ -134,7 +137,6 @@
 							</div>
 						</div>
 					</div>
-
 					<div class="col-sm-3">
 						<div class="thumbnail">
 							<div class="myway-icon-services">
@@ -152,24 +154,25 @@
 				</div>
 			</div>
 		</section>
+		<!-- END SERVICES -->
 
-
+		<!-- START WORKS -->
 		<div id="works-top" data-bottom-top="background-position: 50% -150px;" data-top-bottom="background-position: 50% 50px;">
 			<h1 class="header">Works & Features</h1>
 			<p class="header">How awesome it is?</p>
 		</div>
 
-		<section id ="works">
+		<section id="works">
 			<div class="container">
 				<div class="row divide">
 					<div class="col-xs-12">
 						<div id="carousel-1" class="carousel slide">
 							<div class="carousel-inner">
 								<div class="item active">
-									<img src="img/works/works_1.jpg" alt="">
+									<img src="/img/works/works_1.jpg" alt="works_1.jpg">
 								</div>
 								<div class="item">
-									<img src="img/works/works_2.jpg" alt="">
+									<img src="/img/works/works_2.jpg" alt="works_2.jpg">
 								</div>
 							</div>
 							<button class="left carousel-control" href="#carousel-1" data-slide="prev"><i class="fa fa-chevron-left"></i></button>
@@ -188,13 +191,13 @@
 						<div id="carousel-2" class="carousel slide">
 							<div class="carousel-inner">
 								<div class="item active">
-									<img src="img/works/works_3.jpg" alt="">
+									<img src="/img/works/works_3.jpg" alt="">
 								</div>
 								<div class="item">
-									<img src="img/works/works_4.jpg" alt="">
+									<img src="/img/works/works_4.jpg" alt="">
 								</div>
 								<div class="item">
-									<img src="img/works/works_5.jpg" alt="">
+									<img src="/img/works/works_5.jpg" alt="">
 								</div>
 							</div>
 							<button class="left carousel-control" href="#carousel-2" data-slide="prev"><i class="fa fa-chevron-left"></i></button>
@@ -209,12 +212,284 @@
 					</div>
 				</div>
 				<hr>
+				<div class="row divide">
+					<div class="col-sm-6 divide">
+						<h1>Supereasy to customize</h1>
+						<h4>It’s made for folks of all skill levels and projects of all sizes</h4>
+						<p>Bootstrap makes front-end web development faster and easier. It's made for folks of all skill levels, devices of all shapes, and projects of all sizes. Beside ours, with Bootstrap, you get extensive and beautiful documentation with hundreds of live examples, code snippets, and more.</p>
+						<a href="#" class="btn btn-link">View project</a>
+					</div>
+					<div class="col-sm-6">
+						<div id="carousel-3" class="carousel slide">
+							<div class="carousel-inner">
+								<div class="item active">
+									<img src="/img/works/works_6.jpg" alt="works_6.jpg">
+								</div>
+								<div class="item">
+									<img src="/img/works/works_7.jpg" alt="works_7.jpg">
+								</div>
+								<div class="item">
+									<img src="/img/works/works_8.jpg" alt="works_8.jpg">
+								</div>
+							</div>
+							<button class="left carousel-control" href="#carousel-3" data-slide="prev"><i class="fa fa-chevron-left"></i></button>
+							<button class="right carousel-control" href="#carousel-3" data-slide="next"><i class="fa fa-chevron-right"></i></button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
+		<!-- END WORKS -->
+
+		<!-- START GALLERY -->
+		<div id="gallery-top" data-bottom-top="background-position: 50% -150px;" data-top-bottom="background-position: 50% 50px;">
+			<h1 class="header">Gallery</h1>
+			<p class="header">Alternative Works Version</p>
+		</div>
+
+		<section id="gallery">
+			<div class="container">
+				<div class="row divide">
+					<div class="col-sm-8 col-sm-offset-2 divide-bottom text-center">
+						<h1>Free Photos & mock-ups</h1>
+						<p>Source to free photos used in demo intro and header sections + many more and 500+ PSD mock-ups is included with download.</p>
+					</div>
+					<div class="col-xs-6 col-sm-4 gallery-item">
+						<div class="thumbnail">
+							<a href="/img/works/works_3.jpg" data-toggle="lightbox">
+								<img src="/img/works/works_3.jpg" alt="works_3.jpg">
+								<div class="gallery-overlay">
+									<div class="myway-icon-gallery">
+										<svg viewBox="0 0 32 32">
+											<use xlink:href="#picture"></use>
+										</svg>
+									</div>
+							</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 gallery-item">
+						<div class="thumbnail">
+							<a href="https://www.youtube.com/watch?v=zl0zw1YVZd4" data-toggle="lightbox">
+								<img src="/img/works/works_4.jpg" alt="works_4.jpg">
+								<div class="gallery-overlay">
+									<div class="myway-icon-gallery">
+										<svg viewBox="0 0 32 32">
+											<use xlink:href="#music-note"></use>
+										</svg>
+									</div>
+							</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 gallery-item">
+						<div class="thumbnail">
+							<a href="/img/works_5.jpg" data-toggle="lightbox">
+								<img src="/img/works/works_5.jpg" alt="works_5.jpg">
+								<div class="gallery-overlay">
+									<div class="myway-icon-gallery">
+										<svg viewBox="0 0 32 32">
+											<use xlink:href="#painting-pallet"></use>
+										</svg>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 gallery-item">
+						<div class="thumbnail">
+							<a href="/img/works_6.jpg" data-toggle="lightbox">
+								<img src="/img/works/works_6.jpg" alt="works_6.jpg">
+								<div class="gallery-overlay">
+									<div class="myway-icon-gallery">
+										<svg viewBox="0 0 32 32">
+											<use xlink:href="#search"></use>
+										</svg>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 gallery-item">
+						<div class="thumbnail">
+							<a href="/img/works_7.jpg" data-toggle="lightbox">
+								<img src="/img/works/works_7.jpg" alt="works_7.jpg">
+								<div class="gallery-overlay">
+									<div class="myway-icon-gallery">
+										<svg viewBox="0 0 32 32">
+											<use xlink:href="#link"></use>
+										</svg>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 gallery-item">
+						<div class="thumbnail">
+							<a href="http://vimeo.com/85421325" data-remote="http://player.vimeo.com/video/85421325" data-toggle="lightbox">
+								<img src="/img/works/works_8.jpg" alt="works_8.jpg">
+								<div class="gallery-overlay">
+									<div class="myway-icon-gallery">
+										<svg viewBox="0 0 32 32">
+											<use xlink:href="#volume-loud"></use>
+										</svg>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END GALLERY -->
+
+		<!-- START TEAM -->
+		<div id="team-top" data-bottom-top="background-position: 50% -150px;" data-top-bottom="background-position: 50% 50px;">
+			<h1 class="header">And we are</h1>
+			<p class="header">...awesome, we know.</p>
+		</div>
+
+		<section id="team">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 divide">
+						<div class="thumbnail">
+							<div class="team-img">
+								<img src="/img/team/team-1.png" alt="team-1.png">
+								<div class="team-overlay">
+									<div class="myway-icon-team">
+										<a href="#" target="_blank">
+											<svg viewbox="0 0 32 32">
+												<use xlink:href="#linkedin"></use>
+											</svg>
+										</a>
+										<a href="#" target="_blank">
+											<svg viewbox="0 0 32 32">
+												<use xlink:href="#facebook"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="caption">
+								<h3>Aleksandar Macanovic</h3>
+								<p><small>Girlfriend, Amiga500, Star Wars, LEGO.</small></p>
+								<h4>Developer</h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 divide">
+						<div class="thumbnail">
+							<div class="team-img">
+								<img src="/img/team/team-2.png" alt="team-2.png">
+								<div class="team-overlay">
+									<div class="myway-icon-team">
+										<a href="#" target="_blank">
+											<svg viewbox="0 0 32 32">
+												<use xlink:href="#dribbble"></use>
+											</svg>
+										</a>
+										<a href="#" target="_blank">
+											<svg viewbox="0 0 32 32">
+												<use xlink:href="#twitter"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="caption">
+								<h3>Kristina Nikolic</h3>
+								<p><small>Boyfriend, Coffee, Theatre, R2D2, Gin.</small></p>
+								<h4>Designer</h4>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-sm-4 divide">
+						<div class="thumbnail">
+							<div class="team-img">
+								<img src="/img/team/team-3.png" alt="team-3.png">
+								<div class="team-overlay">
+									<div class="myway-icon-team">
+										<a href="#" target="_blank">
+											<svg viewbox="0 0 32 32">
+												<use xlink:href="#linkedin"></use>
+											</svg>
+										</a>
+										<a href="#" target="_blank">
+											<svg viewbox="0 0 32 32">
+												<use xlink:href="#youtube1"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="caption">
+								<h3>Imperial Stormtrooper</h3>
+								<p><small>Job, PopCorn, Cognac, Legendary, High Five.</small></p>
+								<h4>Designer</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="thumbnail testimonial">
+							<blockquote>
+								<p>I don't care that they stole my idea. I care that they don't have any of their own.
+								<small>Nikola Tesla, Serbian Inventor</small>
+								</p>
+							</blockquote>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="thumbnail testimonial">
+							<blockquote>
+								<p>If there is anything that a man can do well, I say let him do it. Give him a chance.
+								<small>Abraham Lincoln, President of the US</small>
+								</p>
+							</blockquote>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="thumbnail testimonial">
+							<blockquote>
+								<p>There are no secrets to success. It is the result of preparation, hard work, and learning from failure.
+								<small>Colin Powell, American statesman</small>
+								</p>
+							</blockquote>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="thumbnail testimonial">
+							<blockquote>
+								<p>If you cannot work with love but only with distaste, it is better that you should leave your work.
+								<small>Khalil Gibran, Lebanese-American artist</small>
+								</p>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END TEAM -->
+
+		<!-- START CONTACT -->
+		<div id="contact-top">
+			<div class="gmap"></div>
+		</div>
+		<section id="contact">
+
+		</section>
+
+		<!-- END CONTACT -->
 
 		<script src="/js/jquery-1.11.0.min.js"></script>
 		<script src="/bootstrap-3.1.1-dist/js/bootstrap.js"></script>
 		<script src="/js/mycustom.js"></script>
+		<script src="/js/jquery.form.js"></script>
+		<script src="/js/jquery.flowuplabels.js"></script>
 
 </body>
 </html>

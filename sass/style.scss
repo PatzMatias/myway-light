@@ -50,6 +50,9 @@ body {
 		-moz-transform: translate(-50%, -50%);
 		transform: translate(-50%, -50%);
 	}
+	.item{
+		height: 100%;
+	}
 }
 
 /***************** 
@@ -549,40 +552,40 @@ p.header {
 	bottom: 0;
 	background-color: #008cba;
 	z-index: 9999;
+	.spinner {
+		font-weight: 300;
+		color: #fff;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		right: 0;
+		width: 70px;
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		div {
+			width: 18px;
+			height: 18px;
+			background-color: #fff;
+			border-radius: 100%;
+			display: inline-block;
+			-webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+			animation: bouncedelay 1.4s infinite ease-in-out;
+			-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
+		}
+		.bounce1 {
+			-webkit-animation-delay: -0.32s;
+			animation-delay: -0.32s;
+		}
+		.bounce2 {
+			-webkit-animation-delay: -0.16s;
+			animation-delay: -0.16s;
+		}
+	}
 }
 
-.spinner {
-	font-weight: 300;
-	color: #fff;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	right: 0;
-	width: 70px;
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	div {
-		width: 18px;
-		height: 18px;
-		background-color: #fff;
-		border-radius: 100%;
-		display: inline-block;
-		-webkit-animation: bouncedelay 1.4s infinite ease-in-out;
-		animation: bouncedelay 1.4s infinite ease-in-out;
-		-webkit-animation-fill-mode: both;
-		animation-fill-mode: both;
-	}
-	.bounce1 {
-		-webkit-animation-delay: -0.32s;
-		animation-delay: -0.32s;
-	}
-	.bounce2 {
-		-webkit-animation-delay: -0.16s;
-		animation-delay: -0.16s;
-	}
 
-}
 
 @-webkit-keyframes bouncedelay {
 	0%, 80%, 100% { -webkit-transform: scale(0.0) }
@@ -596,5 +599,234 @@ p.header {
 	} 40% { 
 		transform: scale(1.0);
 		-webkit-transform: scale(1.0);
+	}
+}
+
+/**************************
+		Gallery
+**************************/
+
+#gallery-top {
+	background: url("../img/gallery_bg.jpg");
+}
+
+#gallery {
+	background: #fff;
+	.thumbnail {
+		background: transparent;
+		text-align: center;
+		position: relative;
+		padding: 0;
+		margin: 0;
+		border: 0;
+	}
+}
+
+.gallery-item {
+	padding: 0;
+}
+
+.gallery-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.gallery-overlay:hover {
+	background: rgba(0, 0, 0, .4);
+}
+
+.gallery-overlay .myway-icon-gallery {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	right: 0;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 68px;
+	height: 68px;
+	display: inline-block;
+	fill: rgba(255, 255, 255, 0);
+	stroke: rgba(255, 255, 255, 1);
+	stroke-width: .05em;
+	stroke-opacity: 1;
+	stroke-linecap: butt;
+	stroke-linejoin: bevel;
+	stroke-dasharray: 0, 150;
+	-webkit-transition: fill 1.5s, stroke-dasharray .75s, stroke-opacity 1.5s ease;
+	-moz-transition: fill 1.5s, stroke-dasharray .75s, stroke-opacity 1.5s ease;
+	-ms-transition: fill 1.5s, stroke-dasharray .75s, stroke-opacity 1.5s ease;
+	-o-transition: fill 1.5s, stroke-dasharray .75s, stroke-opacity 1.5s ease;
+	transition: fill 1.5s, stroke-dasharray .75s, stroke-opacity 1.5s ease;
+}
+
+@media (max-width: 767px) {
+	.myway-icon-gallery {
+		width: 48px;
+		height: 48px;
+	}
+}
+
+.gallery-overlay:hover > .myway-icon-gallery {
+	fill: rgba(255, 255, 255, 1);
+	stroke-dasharray: 150, 1;
+	stroke-opacity: 0;
+}
+
+.myway-icon-gallery:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/***********************
+		Team
+***********************/
+
+#team-top {
+	background: url("../img/team_bg.jpg") no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+#team {
+	background: #fff;
+	.thumbnail, .team-img {
+		background-color: transparent;
+		position: relative;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+		border: 0;
+	}
+	.thumbnail h3{
+		color: #008cba;
+		margin: 15px 0 0 0;
+	}
+	.thumbnail h4 {
+		font-size: 13px;
+		font-weight: 300;
+		margin: 15px 0 0 0;
+		text-transform: uppercase;
+	}
+	.thumbnail p {
+		margin: 15px 0 0 0;
+	}
+}
+
+.team-overlay {
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	.myway-icon-team {
+		position: absolute;
+		top: 110%;
+		left: 50%;
+		right: 0;
+		display: inline-block;
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		-webkit-transition: top .2s ease;
+		-moz-transition: top .2s ease;
+		-ms-transition: top .2s ease;
+		-o-transition: top .2s ease;
+		transition: top .2s ease;
+	}
+	.myway-icon-team a {
+	width: 42px;
+	height: 42px;
+	fill: rgba(255, 255, 255, 0);
+	stroke: rgba(255, 255, 255, 1);
+	stroke-width: 0.08em;
+	stroke-opacity: 1;
+	stroke-linecap: butt;
+	stroke-linejoin: bevel;
+	stroke-dasharray: 0, 150;
+	stroke-dashoffset: 150px;
+	filter: drop-shadow(0px 0px 20px #000);
+	-webkit-filter: drop-shadow(0px 0px 30px #000);
+	-webkit-transition: fill 2s, stroke-dasharray 1s, stroke-opacity 2s, filter 1s ease;
+	-moz-transition: fill 2s, stroke-dasharray 1s, stroke-opacity 2s, filter 1s ease;
+	-ms-transition: fill 2s, stroke-dasharray 1s, stroke-opacity 2s, filter 1s ease;
+	-o-transition: fill 2s, stroke-dasharray 1s, stroke-opacity 2s, filter 1s ease;
+	transition: fill 2s, stroke-dasharray 1s, stroke-opacity 2s, filter 1s ease;
+	}
+}
+
+.team-overlay:hover{
+	.myway-icon-team {
+		top: 50%;
+		a{
+			fill: rgba(255, 255, 255, 1);
+			stroke-dasharray: 150, 1;
+			stroke-opacity: 0;
+		}
+	}
+}
+
+.myway-icon-team {
+	svg {
+		padding: 5px;
+		display: inline-block;
+		max-width: 42px;
+	}
+	a {
+		position: relative;
+		display: inline-block;
+		z-index: 1;
+		-webkit-transition: fill 2s, stroke-dashoffset 1s, top .2s, filter 1s ease;
+		-moz-transition: fill 2s, stroke-dashoffset 1s, top .2s, filter 1s ease;
+		-ms-transition: fill 2s, stroke-dashoffset 1s, top .2s, filter 1s ease;
+		-o-transition: fill 2s, stroke-dashoffset 1s, top .2s, filter 1s ease;
+		transition: fill 2s, stroke-dashoffset 1s, top .2s, filter 1s ease;
+	}
+	a:after {
+		content:"";
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.testimonial {
+	blockquote {
+	font-size: 14px;
+	position: relative;
+	padding: 30px 0 45px 0;
+	margin: 0;
+	top: 0;
+	border-left: 0;
+	min-height: 185px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	}
+}
+
+.testimonial:hover{
+	blockquote {
+		top: -5px;
+		box-shadow: 0 5px 0 rgba(0, 140, 186, 1);
 	}
 }

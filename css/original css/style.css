@@ -475,6 +475,8 @@ p.header {
 	height: 100%;
 }
 
+
+/*lightbox*/
 .modal-backdrop.in {
 	-webkit-opacity: 0.95;
 	-moz-opacity: 0.95;
