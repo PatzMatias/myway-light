@@ -54,5 +54,21 @@ $(document).ready(function(){
 		longitude: 19.845,
 		zoom: 15
 	});
+
+
+	$('.flowuplabels').FlowupLabels({
+		feature_onInitLoad: false, 
+		class_focused: 'focused',
+		class_populated: 'populated' 
+	});
+
+
+
+
+
 });
 
+$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+}); 

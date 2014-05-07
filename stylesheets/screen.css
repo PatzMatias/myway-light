@@ -1011,7 +1011,306 @@ p.header {
   box-shadow: 0 5px 0 #008cba;
 }
 
-/* line 834, ../sass/style.scss */
+/*************
+	Contact
+**************/
+/* line 838, ../sass/style.scss */
 .gmap {
   height: 350px;
+}
+
+@media (max-width: 568px) {
+  /* line 844, ../sass/style.scss */
+  .gmap {
+    height: 200px;
+  }
+}
+/* line 849, ../sass/style.scss */
+#contact {
+  background: #fff;
+}
+
+/* line 854, ../sass/style.scss */
+.form-control,
+.form-control:focus {
+  color: #25272B;
+  border: 0;
+  outline: none;
+  resize: none;
+  background: #eeeff2;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 870, ../sass/style.scss */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+}
+
+/* line 881, ../sass/style.scss */
+.form-group {
+  margin-top: 5%;
+}
+
+@media (min-width: 768px) {
+  /* line 886, ../sass/style.scss */
+  .form-group {
+    display: inline-block;
+  }
+}
+/* line 891, ../sass/style.scss */
+.form-group, label {
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/* line 897, ../sass/style.scss */
+form .btn {
+  background: #008cba;
+  color: #fff;
+  display: inline-block;
+  margin: 0;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  -o-transition: all .1s linear;
+  transition: all .1s linear;
+}
+/* line 907, ../sass/style.scss */
+form .btn:hover {
+  background: #0079ad;
+  color: #fff;
+}
+/* line 911, ../sass/style.scss */
+form .btn:focus {
+  background: #008cba;
+  color: #fff;
+  outline: 0 auto transparent;
+  outline-offset: -2px;
+}
+
+/* line 920, ../sass/style.scss */
+.flowuplabels .fl_wrap {
+  height: 45px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 927, ../sass/style.scss */
+.flowuplabels .fl_label {
+  top: 12px;
+  position: absolute;
+  z-index: 3;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  -o-transition: all .1s linear;
+  transition: all .1s linear;
+}
+/* line 936, ../sass/style.scss */
+.flowuplabels .fl_input {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #f1f2f3;
+  border-radius: 0;
+  padding: 13px 0 0 0;
+  z-index: 2;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 948, ../sass/style.scss */
+.flowuplabels .fl_wrap.focused .fl_label,
+.flowuplabels .fl_wrap.populated .fl_label {
+  top: -5px;
+  font-size: 12px;
+}
+/* line 952, ../sass/style.scss */
+.flowuplabels .fl_wrap.focused .fl_label {
+  color: #008cba;
+}
+
+/* line 958, ../sass/style.scss */
+.message {
+  display: none;
+}
+
+/* line 962, ../sass/style.scss */
+#form-alert {
+  padding: 5px 15px 5px 15px;
+  margin: 15px 0 0 0;
+}
+
+/* line 967, ../sass/style.scss */
+.alert li {
+  list-style: none;
+  display: inline-block;
+}
+
+/* line 972, ../sass/style.scss */
+.alert-danger, .alert-succes {
+  border-width: 1px;
+  border-radius: 0;
+}
+
+/* line 977, ../sass/style.scss */
+.alert-danger {
+  color: #b94a48;
+}
+
+/* line 981, ../sass/style.scss */
+.alert-succes {
+  color: #468847;
+}
+
+/***************
+	Footer
+****************/
+/* ==== 10) Footer ==== */
+/* line 991, ../sass/style.scss */
+#footer {
+  background-color: #eeeff2;
+  border-top: 1px solid #e9ebed;
+}
+/* line 994, ../sass/style.scss */
+#footer .col-sm-2 ul {
+  border-bottom: 1px solid #dfe1e3;
+  padding-bottom: 15px;
+}
+/* line 998, ../sass/style.scss */
+#footer ul {
+  list-style: none;
+  -webkit-padding-start: 0px;
+}
+/* line 1002, ../sass/style.scss */
+#footer li {
+  padding-bottom: 5px;
+  text-align: right;
+}
+/* line 1006, ../sass/style.scss */
+#footer img {
+  padding: 15px 0 0 0;
+}
+/* line 1009, ../sass/style.scss */
+#footer h5 {
+  border-bottom: 1px solid #dfe1e3;
+  padding-bottom: 15px;
+  margin-top: 15px;
+}
+/* line 1014, ../sass/style.scss */
+#footer .facebook {
+  color: #3B5998;
+}
+/* line 1017, ../sass/style.scss */
+#footer .twitter {
+  color: #09C;
+}
+/* line 1020, ../sass/style.scss */
+#footer .gplus {
+  color: #dd4b38;
+}
+/* line 1023, ../sass/style.scss */
+#footer .instagram {
+  color: #3F729B;
+}
+/* line 1026, ../sass/style.scss */
+#footer .pinterest {
+  color: #CB2027;
+}
+/* line 1033, ../sass/style.scss */
+#footer .facebook:hover,
+#footer .twitter:hover,
+#footer .pinterest:hover,
+#footer .instagram:hover,
+#footer .google:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 767px) {
+  /* line 1041, ../sass/style.scss */
+  #footer li {
+    text-align: left;
+  }
+}
+/*lightbox*/
+/* line 5, ../sass/ekko-lightbox.scss */
+.modal-backdrop.in {
+  -webkit-opacity: 0.95;
+  -moz-opacity: 0.95;
+  opacity: 0.95;
+  background-color: #333333;
+}
+
+/* line 13, ../sass/ekko-lightbox.scss */
+.ekko-lightbox .modal-content {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+}
+/* line 24, ../sass/ekko-lightbox.scss */
+.ekko-lightbox .modal-header {
+  border: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 28, ../sass/ekko-lightbox.scss */
+.ekko-lightbox .modal-header .close {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  color: #fff;
+  text-shadow: 0;
+  font-weight: 100;
+  margin-top: 5px;
+}
+/* line 37, ../sass/ekko-lightbox.scss */
+.ekko-lightbox .modal-header .close:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+/* line 42, ../sass/ekko-lightbox.scss */
+.ekko-lightbox .modal-header h4.modal-title {
+  font-weight: 100;
+  color: #fff;
+  padding: 0;
+}
+/* line 49, ../sass/ekko-lightbox.scss */
+.ekko-lightbox .modal-body {
+  padding: 0;
+}
+/* line 53, ../sass/ekko-lightbox.scss */
+.ekko-lightbox .modal-footer {
+  -webkit-opacity: 0.9;
+  -moz-opacity: 0.9;
+  opacity: 0.9;
+  border: 0;
+  color: #fff;
+  font-weight: 100;
+  padding: 0;
+}
+
+/* line 64, ../sass/ekko-lightbox.scss */
+.ekko-lightbox-nav-overlay a {
+  -webkit-opacity: 0.9;
+  -moz-opacity: 0.9;
+  opacity: 0.9;
+  text-shadow: none;
 }
