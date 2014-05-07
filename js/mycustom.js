@@ -8,6 +8,10 @@ $(document).ready(function(){
 		});
 	});*/
 
+	$('a[href="#"]').click(function() {
+		return false;
+	});
+
 //intro text slider
 //
 	$('#carousel_fade_intro').carousel({
@@ -16,7 +20,7 @@ $(document).ready(function(){
 	});
 //works sliders
 //
-	$('#carousel-1, #carousel-2 #carousel-3').carousel({
+	$('#carousel-1, #carousel-2, #carousel-3').carousel({
 		interval: false
 	})
 
@@ -45,7 +49,7 @@ $(document).ready(function(){
 		markers: [{ latitude: 45.256,
 					longitude: 19.845
 				}],
-		icon: { image: "/img/map-pin.png",
+		icon: { image: "img/map-pin.png",
 				iconsize: [32, 48],
 				iconanchor: [16, 24],
 				infowindowanchor: [0, 0]
@@ -61,9 +65,6 @@ $(document).ready(function(){
 		class_focused: 'focused',
 		class_populated: 'populated' 
 	});
-
-
-
 
 
 });
