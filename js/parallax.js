@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 
 	$('.navlink-item1').click(function(){
-	    $('html, body').animate({
+	    $('body').animate({
     		scrollTop: 0
     	}, 1000, 'easeInOutExpo', function() {
 	    	 // Callback is required for iOS
@@ -18,7 +18,7 @@ $(document).ready(function() {
 
 
 	$('.navlink-item2').click(function(){
-    	$('html, body').animate({
+    	$('body').animate({
     		scrollTop:$('#services').offset().top-reduce
     	}, 1000,'easeInOutExpo', function() {
 	    	//Callback is required for iOS
@@ -27,7 +27,7 @@ $(document).ready(function() {
 	});
 
 	$('.navlink-item3').click(function(){
-    	$('html, body').animate({
+    	$('body').animate({
     		scrollTop:$('#works-top').offset().top-reduce
     	}, 1000, 'easeInOutExpo', function() {
 	    	// Callback is required for iOS
@@ -36,7 +36,7 @@ $(document).ready(function() {
 	});
 
 	$('.navlink-item4').click(function(){
-    	$('html, body').animate({
+    	$('body').animate({
     		scrollTop:$('#gallery-top').offset().top-reduce
     	}, 1000, 'easeInOutExpo', function() {
 	  // Callback is required for iOS
@@ -45,7 +45,7 @@ $(document).ready(function() {
 	});
 
 	$('.navlink-item5').click(function(){
-    	$('html, body').animate({
+    	$('body').animate({
     		scrollTop:$('#team-top').offset().top-reduce
     	}, 1000, 'easeInOutExpo', function() {
 	    	 // Callback is required for iOS
@@ -54,7 +54,7 @@ $(document).ready(function() {
 	});
 
 	$('.navlink-item6').click(function(){
-    	$('html, body').animate({
+    	$('body').animate({
     		scrollTop:$('#contact-top').offset().top-reduce
     	}, 1000, 'easeInOutExpo', function() {
 	    	 // Callback is required for iOS
