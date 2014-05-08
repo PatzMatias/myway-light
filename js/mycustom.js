@@ -8,6 +8,10 @@ $(document).ready(function(){
 		});
 	});*/
 
+	$('a[href="#"]').click(function() {
+		return false;
+	});
+
 //intro text slider
 //
 	$('#carousel_fade_intro').carousel({
@@ -17,7 +21,7 @@ $(document).ready(function(){
 
 //works sliders
 //
-	$('#carousel-1, #carousel-2 #carousel-3').carousel({
+	$('#carousel-1, #carousel-2, #carousel-3').carousel({
 		interval: false
 	})
 
