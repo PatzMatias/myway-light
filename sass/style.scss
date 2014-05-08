@@ -28,6 +28,73 @@ body {
 	margin-bottom: $mb5;
 }
 
+/***************** 
+	Navigation
+*****************/
+
+.navbar-default {
+	background: #fff;
+	border-color: transparent;
+	padding: 5px 0px;
+}
+
+@media (max-width: 767px) {
+	.navbar-default {
+		background-color: $white !important;
+	}
+	.navbar a {
+		color: $black !important;
+	}
+}
+
+.navbar-default .navbar-collapse {
+	border-color: #f8f8f8;
+}
+
+.navbar-fixed-top {
+	position: fixed;
+}
+
+.navbar-brand {
+	line-height: 0;
+}
+
+.nav li:first-child {
+	display: none;
+}
+
+.nav a {
+	color: $black;
+}
+
+.nav a:hover {
+	color: $navcolor !important;
+}
+
+.nav .active a {
+	color: $navcolor !important;
+}
+
+.navbar a {
+	font-size: 13px;
+	text-align: center;
+	padding: 15px;
+}
+
+.navbar a, .navbar .active a:hover, .navbar .active a:focus {
+	background-color: transparent !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #ddd;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: transparent;
+}
+
+
+
 
 /***************** 
 	INTRO 
@@ -114,71 +181,6 @@ body {
 	100% {opacity: 0; top: 40%;}
 }
 
-
-/***************** 
-	Navigation
-*****************/
-
-.navbar-default {
-	background: transparent;
-	border-color: transparent;
-	padding: 5px 0px;
-}
-
-@media (max-width: 767px) {
-	.navbar-default {
-		background-color: $white !important;
-	}
-	.navbar a {
-		color: $black !important;
-	}
-}
-
-.navbar-default .navbar-collapse {
-	border-color: #f8f8f8;
-}
-
-.navbar-fixed-top {
-	position: fixed;
-}
-
-.navbar-brand {
-	line-height: 0;
-}
-
-.nav li:first-child {
-	display: none;
-}
-
-.nav a {
-	color: $black;
-}
-
-.nav a:hover {
-	color: $navcolor !important;
-}
-
-.nav .active a {
-	color: $navcolor !important;
-}
-
-.navbar a {
-	font-size: 13px;
-	text-align: center;
-	padding: 15px;
-}
-
-.navbar a, .navbar .active a:hover, .navbar .active a:focus {
-	background-color: transparent !important;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-	background-color: #ddd;
-}
-
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: transparent;
-}
 
 /***************** 
 	Carousel
