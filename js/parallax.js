@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 	$('.navlink-item1').click(function(){
 	    $('html, body').animate({
-    		scrollTop:0
+    		scrollTop: 0
     	}, 1000, 'easeInOutExpo', function() {
 	    	 // Callback is required for iOS
 		});

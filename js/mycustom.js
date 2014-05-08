@@ -1,12 +1,12 @@
 $(document).ready(function(){
 	'use strict';
 
-/*	$(function(){
-		$('#intro .item').css({'height':($(window).height())+'px'});
-		$(window).resize(function(){
-		$('#intro .item').css({'height':($(window).height())+'px'});
-		});
-	});*/
+	// $(function(){
+	// 	$('#intro .item').css({'height':($(window).height())+'px'});
+	// 	$(window).resize(function(){
+	// 	$('#intro .item').css({'height':($(window).height())+'px'});
+	// 	});
+	// });
 
 	$('a[href="#"]').click(function() {
 		return false;
