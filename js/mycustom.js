@@ -14,6 +14,7 @@ $(document).ready(function(){
 		interval: 2500,
 		pause: "false"
 	});
+
 //works sliders
 //
 	$('#carousel-1, #carousel-2 #carousel-3').carousel({
@@ -34,6 +35,8 @@ $(document).ready(function(){
 	var c=new XMLHttpRequest(); c.open('GET', url, false); c.setRequestHeader('Content-Type', 'text/xml'); c.send();
 	document.body.insertBefore(c.responseXML.firstChild, document.body.firstChild)
 
+
+//loading screen
 	$('.spinner').fadeOut('slow');
 	$('.preloader').delay(350).fadeOut('slow');
 
@@ -61,9 +64,6 @@ $(document).ready(function(){
 		class_focused: 'focused',
 		class_populated: 'populated' 
 	});
-
-
-
 
 
 });
