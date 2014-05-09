@@ -11,24 +11,18 @@ $(document).ready(function(){
 
 //Smooth Anchor Navigation
 //
-$("a[href*=#]:not([href=#])").click(function(event){
-    event.preventDefault();
-    //determine location of section
-    var section = 0;
-    var link = $(this.hash).offset.top;
-    var reduce=60;
-    var currentlocation=$(document).height()-$(window).height();
-    if(link > currentlocation){
-      section = currentlocation;
+  $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').stop().animate({scrollTop: target.offset().top-60}, 1000, "easeInOutExpo");
+        return false;
+      }
     }
-    else{
-         section = link;
-    }
-    
-     //go to section's location
-    $('body').stop().animate({scrollTop:section - reduce},1000,'easeInOutExpo');
+  });
 });
-
 
 
 //intro text slider
