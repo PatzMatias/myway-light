@@ -59,8 +59,6 @@ $(document).ready(function(){
 		class_focused: 'focused',
 		class_populated: 'populated' 
 	});
-
-
 });
 
 $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
