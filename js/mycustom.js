@@ -8,7 +8,7 @@ $(document).ready(function(){
 		$('#intro .item').css({'height':($(window).height())+'px'});
 		});
 	});
-
+ 
 //Smooth Anchor Navigation
 //
   $(function() {
