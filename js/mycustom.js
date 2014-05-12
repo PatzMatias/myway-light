@@ -11,23 +11,18 @@ $(document).ready(function(){
  
 //Smooth Anchor Navigation
 //
-$("a[href*=#]:not([href=#])").click(function(event){
-    event.preventDefault();
-    //determine location of section
-    var section = 0;
-    var link = $(this.hash).offset.top;
-    var reduce=60;
-    var currentlocation=$(document).height()-$(window).height();
-    if(link > currentlocation){
-      section = currentlocation;
-    }
-    else{
-         section = link;
-    }
-    
-     //go to section's location
-    $('body').stop().animate({scrollTop:section - reduce},1000,'easeInOutExpo');
-});
+  $(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').stop().animate({scrollTop: target.offset().top-60}, 1000,'easeInOutExpo');
+	        return false;
+	      }
+	    }
+	  });
+	});
 
 
 
@@ -47,7 +42,7 @@ $("a[href*=#]:not([href=#])").click(function(event){
 	var c=new XMLHttpRequest(); c.open('GET', url, false); c.setRequestHeader('Content-Type', 'text/xml'); c.send();
 	document.body.insertBefore(c.responseXML.firstChild, document.body.firstChild)
 
-	var url ='svgsimpleline-icons.svg';
+	var url ='svg/simpleline-icons.svg';
 	var c=new XMLHttpRequest(); c.open('GET', url, false); c.setRequestHeader('Content-Type', 'text/xml'); c.send();
 	document.body.insertBefore(c.responseXML.firstChild, document.body.firstChild)
 
