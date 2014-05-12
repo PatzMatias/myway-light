@@ -11,6 +11,7 @@ $(document).ready(function(){
  
 //Smooth Anchor Navigation
 //
+  $(function() {
 	  $('a[href*=#]:not([href=#])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 	      var target = $(this.hash);
@@ -23,12 +24,13 @@ $(document).ready(function(){
 	  });
 	});
 
+
+
 //intro text slider
 	$('#carousel_fade_intro').carousel({
 		interval: 2500,
 		pause: "false"
 	});
-
 //works sliders
 //
 	$('#carousel-1, #carousel-2, #carousel-3').carousel({
@@ -47,12 +49,6 @@ $(document).ready(function(){
 	var url ='svg/social-icons.svg';
 	var c=new XMLHttpRequest(); c.open('GET', url, false); c.setRequestHeader('Content-Type', 'text/xml'); c.send();
 	document.body.insertBefore(c.responseXML.firstChild, document.body.firstChild)
-
-
-
-//loading screen
-	$('.spinner').fadeOut('slow');
-	$('.preloader').delay(350).fadeOut('slow');
 
 
 //google map
