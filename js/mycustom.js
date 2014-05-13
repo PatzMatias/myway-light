@@ -24,7 +24,19 @@ $(document).ready(function(){
 	  });
 	});
 
-
+	imagesLoaded(document.body, function(){
+		if ($('.no-touch').length) {
+			skrollr.init({
+				smoothScrolling: false,
+				forceHeight: false
+			});
+/* see docs - if logo over image is not visible due to light/dark color, change logo image on scroll */
+/* append css to logo image div, change width and height to match your logo size 
+			$('.navbar-brand div').css({'width':'123px', 'height':'20px'});*/
+		}
+/* if touch device detected, append image logo
+		else $(".navbar-brand").append("<img src='img/logo.png' alt='logo' class='img-responsive'>")*/
+	});
 
 //intro text slider
 	$('#carousel_fade_intro').carousel({
