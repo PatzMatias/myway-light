@@ -1,0 +1,52 @@
+/**********************
+		Typography 
+**********************/
+
+p {
+	margin: 20px 0 0 0;
+}
+
+h1 {
+	font-size: 56px;
+	font-weight: 300;
+	margin: 20px 0 0 0;
+	line-height: 1;
+	letter-spacing: -2px;
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+h4 {
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 300;
+}
+
+a {
+	color: $black;
+	transition: $twoms;
+	-moz-transition: $twoms;
+	-webkit-transition: $twoms;
+	-o-transition: $twoms;
+}
+
+a:hover {
+	color: #949598;
+	text-decoration: none;
+	transition: $twoms;
+	-moz-transition: $twoms;
+	-webkit-transition: $twoms;
+	-o-transition: $twoms;
+}
+
+textarea:focus, input:focus, a:focus, *:focus {
+	outline: none;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+	outline: 0;
+}

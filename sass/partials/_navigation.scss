@@ -1,0 +1,60 @@
+
+/***************** 
+	Navigation
+*****************/
+
+.navbar-default {
+	background: $white;
+	border-color: transparent;
+	padding: 5px 0px;
+	.navbar-collapse {
+		border-color: $brdr-color;
+	}
+	.navbar-fixed-top {
+		position: fixed;
+	}
+	.navbar-toggle{
+		.icon-bar {
+			background-color: #ddd;
+		}
+	}
+	.navbar-toggle:hover, 
+	.navbar-toggle:focus {
+		background-color: transparent;
+	}
+
+}
+
+.navbar-brand {
+	line-height: 0;
+}
+
+.nav{ 
+	li:first-child {
+		display: none;
+	}
+	.nav a {
+		color: $black;
+	}
+	a:hover {
+		color: $navcolor !important;
+	}
+	.active a {
+		color: $navcolor !important;
+	}
+
+}
+
+.navbar {
+	a {
+		font-size: 13px;
+		text-align: center;
+		padding: 15px;
+	}
+	a, 
+	.active a:hover, 
+	.active a:focus {
+		background-color: transparent !important;
+	}
+}
+

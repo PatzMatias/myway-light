@@ -1,0 +1,28 @@
+/***************
+	SECTION HEADERS
+***************/
+
+h1.header {
+	font-size: 72px;
+	color: $white;
+	text-align: center;
+	margin-bottom: 15px;
+	letter-spacing: -3px;
+}
+
+
+p.header {
+	font-size: 13px;
+	color: $white;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+#services-top,
+#works-top,
+#gallery-top,
+#team-top {
+	padding: 95px 0;
+}

@@ -1,0 +1,85 @@
+/***************** 
+	INTRO 
+*****************/
+
+#intro{
+	min-height: 445px;
+	background: $dark-teal url("../img/intro_bg.jpg") no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: relative;
+	h1 {
+		font-weight: 300;
+		color: $white;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		right: 0;
+		margin: auto;
+		width: 100%;
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+	// .item{
+	// 	height: 100%;
+	// }
+}
+
+/***************** 
+	INTRO SCROLL BUTTON
+*****************/
+
+.scroll-btn {
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0px;
+	text-align: center;
+	opacity: .75;
+	.mouse {
+		position: relative;
+		display: block;
+		width: 50px;
+		height: 75px;
+		margin: 0 auto 40px;
+		border: 2px solid $white;
+		border-radius: 23px;
+		span {
+			position: absolute;
+			display: block;
+			top: 25%;
+			left: 50%;
+			width: 6px;
+			height: 6px;
+			margin: -3px 0 0 -3px;
+			background: $white;
+			border-radius: 50%;
+			-webkit-animation: scroll 2s linear infinite;
+			-moz-animation: scroll 2s linear infinite;
+			animation: scroll 2s linear infinite;
+		}
+	}
+}
+
+@-webkit-keyframes scroll {
+	0% {opacity: 1; top: 40%;}
+	33% {opacity: 1; top: 25%;}
+	66% {opacity: 0; top: 25%;}
+	100% {opacity: 0; top: 40%;}
+}
+
+@-moz-keyframes scroll {
+	0% {opacity: 1; top: 40%;}
+	33% {opacity: 1; top: 25%;}
+	66% {opacity: 0; top: 25%;}
+	100% {opacity: 0; top: 40%;}
+}
+
+@keyframes scroll {
+	0% {opacity: 1; top: 40%;}
+	33% {opacity: 1; top: 25%;}
+	66% {opacity: 0; top: 25%;}
+	100% {opacity: 0; top: 40%;}
+}

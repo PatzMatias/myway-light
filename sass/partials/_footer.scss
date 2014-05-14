@@ -1,0 +1,54 @@
+
+
+/***************
+	Footer
+****************/
+
+/* ==== 10) Footer ==== */
+
+#footer {
+	background-color: #eeeff2;
+	border-top: 1px solid #e9ebed;
+	.col-sm-2 ul {
+		border-bottom: 1px solid #dfe1e3;
+		padding-bottom: 15px;
+	}
+	ul {
+		list-style: none;
+		-webkit-padding-start: 0px;
+	}
+	li {
+		padding-bottom: 5px;
+		text-align: right;
+	}
+	img {
+		padding: 15px 0 0 0;
+	}
+	h5 {
+		border-bottom: 1px solid #dfe1e3;
+		padding-bottom: 15px;
+		margin-top: 15px;
+	}
+	.facebook {
+		color: #3B5998;
+	}
+	.twitter {
+		color: #09C;
+	}
+	.gplus {
+		color: #dd4b38;
+	}
+	.instagram {
+		color: #3F729B;
+	}
+	.pinterest {
+		color: #CB2027;
+	}
+	.facebook:hover,
+	.twitter:hover,
+	.pinterest:hover,
+	.instagram:hover,
+	.google:hover {
+	opacity: 0.6;
+	}
+}

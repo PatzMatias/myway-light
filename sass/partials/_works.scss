@@ -1,0 +1,50 @@
+
+/*********************
+		Works
+ *********************/
+
+#works-top {
+	background: url("../img/works_bg.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+#works {
+	background: $white;
+	 h1 {
+		margin: 20px 0 0 0;
+	}
+	h4 {
+		color: #bbbdc0;
+		margin: 20px 0 0 0;
+	}
+	p {
+		margin: 20px 0 0 0;
+	}
+}
+
+.btn.btn-link {
+	font-weight: 300;
+	font-size: 13px;
+	background-color: transparent;
+	color:  $dark-teal;
+	border: 0;
+	border-radius: 0;
+	outline: 1px solid;
+	outline-offset: 1px;
+	outline-color: rgba(0, 140, 186, 1);
+	margin: 20px 0 0 0;
+	padding: 8px 13px;
+	text-decoration: none;
+	-webkit-transition: all $fourms ease-in-out;
+	-moz-transition: all $fourms ease-in-out;
+	-ms-transition: all $fourms ease-in-out;
+	-o-transition: all $fourms ease-in-out;
+	transition: all $fourms ease-in-out;
+}
+
+.btn.btn-link:hover {
+	background-color:  $dark-teal;
+	color: $white;
+	outline-offset: 10px;
+	outline-color: rgba(0, 140, 186, 0);
+}

@@ -1,0 +1,66 @@
+/*****************
+	Services
+******************/
+
+
+#services{ 
+	background: $white;
+	.thumbnail {
+		background: transparent;
+		text-align: center;
+		position: relative;
+		padding: 0;
+		margin: 25px 0;
+		border: 0;
+			 h3 {
+				color: $dark-teal;
+				margin: $s-margin;
+			}
+			h4 {
+				color: $h4i-color;
+				margin: $s-margin;
+			}
+			p {
+				margin: 0;
+				margin: $s-margin;
+			}
+			i {
+				color:$h4i-color;
+				font-size: 68px;
+			}
+	}
+}
+
+.myway-icon-services {
+	position: relative;
+	width: 68px;
+	height: 68px;
+	display: inline-block;
+	fill: rgba(187, 189, 192, 1);
+	stroke: rgba(255, 255, 255, 1);
+	stroke-width: 0.8px;
+	stroke-linecap: butt;
+	stroke-linejoin: bevel;
+	stroke-dasharray: 0, 150;
+		-webkit-transition: all $ones ease;
+		-moz-transition: all $ones ease;
+		-ms-transition: all $ones ease;
+		-o-transition: all $ones ease;
+		transition: all $ones ease;
+}
+
+.thumbnail:hover{
+	.myway-icon-services {
+	fill: rgba(0, 140, 186, 1);
+	stroke-dasharray: 150, 0;
+	}
+}
+
+.myway-icon-services:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

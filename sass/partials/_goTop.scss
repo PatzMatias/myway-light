@@ -1,0 +1,21 @@
+
+/**********************
+		GO TOP
+**********************/
+.go-top {
+	position: fixed;
+	bottom: 1em;
+	right: 1em;
+	text-decoration: none;
+	color: $white;
+	background: rgba(0, 0, 0, 0.3);
+	font-size: 13px;
+	padding: 1em;
+	padding-top: 1.20em;
+	padding-bottom: 1.20em;
+}
+
+.go-top:hover {
+	background: rgba(0, 0, 0, 0.4);
+	color: $white;
+}

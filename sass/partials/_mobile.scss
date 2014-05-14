@@ -1,0 +1,124 @@
+/******************
+	MOBILE
+******************/
+
+@media (max-width: $size1) {
+
+	/******************
+		NAVIGATION
+	******************/
+	.navbar-default {
+		background-color: $white !important;
+	}
+	.navbar a {
+		color: $black !important;
+	}
+
+	/******************
+		Services
+	******************/
+
+	.myway-icon-services {
+		width: $thumb;
+		height: $thumb;
+	}
+
+	#services{ 
+		.thumbnail{
+			 i{
+				font-size: $thumb;
+			}
+		}
+	}
+	/******************
+		Section Headers
+	******************/
+	#services-top,
+	#works-top,
+	#gallery-top,
+	#team-top {
+		padding: 50px 0;
+	}
+	/*****************
+		Gallery
+	*****************/
+	.myway-icon-gallery {
+		width: $thumb;
+		height: $thumb;
+	}
+
+	/******************
+		Footer
+	*******************/
+	#footer {
+		li{
+		text-align: left;
+		}
+	}
+
+
+}
+
+
+
+@media (max-width: $size2) {
+	/******************
+		Typography
+	******************/
+
+	h1 {
+		font-size: 42px;
+		letter-spacing: -2px;
+	}
+
+	/******************
+		Section Header
+	******************/
+	h1.header {
+		font-size: 48px;
+		letter-spacing: -2px;
+	}
+
+
+	/******************
+		Contact
+	******************/
+	.form-group {
+		display: inline-block;
+	}
+}
+
+
+
+
+
+@media (max-width: $size3){
+	/********************
+		Contact
+	*********************/
+	.gmap {
+		height: 200px;
+	}
+}
+
+
+
+@media (max-width: $size4) {
+	/******************
+		Typography
+	******************/
+
+	h1 {
+		font-size: 28px;
+		letter-spacing: -1px;
+	}
+	/******************
+		Section Header
+	******************/
+	h1.header {
+		font-size: 36px;
+		letter-spacing: -1px;
+	}
+}
+
+

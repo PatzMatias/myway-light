@@ -1,0 +1,77 @@
+/**************************
+		Gallery
+**************************/
+
+#gallery-top {
+	background: url("../img/gallery_bg.jpg");
+}
+
+#gallery {
+	background: $white;
+	.thumbnail {
+		background: transparent;
+		text-align: center;
+		position: relative;
+		padding: 0;
+		margin: 0;
+		border: 0;
+	}
+}
+
+.gallery-item {
+	padding: 0;
+}
+
+.gallery-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all $onems ease;
+	-moz-transition: all $onems ease;
+	-ms-transition: all $onems ease;
+	-o-transition: all $onems ease;
+	transition: all $onems ease;
+	.myway-icon-gallery {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		right: 0;
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		width: 68px;
+		height: 68px;
+		display: inline-block;
+		fill: rgba(255, 255, 255, 0);
+		stroke: rgba(255, 255, 255, 1);
+		stroke-width: .05em;
+		stroke-opacity: 1;
+		stroke-linecap: butt;
+		stroke-linejoin: bevel;
+		stroke-dasharray: 0, 150;
+		-webkit-transition: fill 1.5s, stroke-dasharray 0.75s, stroke-opacity 1.5s ease;
+		-moz-transition: fill 1.5s, stroke-dasharray 0.75s, stroke-opacity 1.5s ease;
+		-ms-transition: fill 1.5s, stroke-dasharray 0.75s, stroke-opacity 1.5s ease;
+		-o-transition: fill 1.5s, stroke-dasharray 0.75s, stroke-opacity 1.5s ease;
+		transition: fill 1.5s, stroke-dasharray 0.75s, stroke-opacity 1.5s ease;
+	}
+	.myway-icon-gallery:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.gallery-overlay:hover {
+	background: rgba(0, 0, 0, .4);
+	.myway-icon-gallery {
+		fill: rgba(255, 255, 255, 1);
+		stroke-dasharray: 150, 1;
+		stroke-opacity: 0;
+	}
+}
