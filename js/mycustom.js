@@ -45,9 +45,9 @@ $(document).ready(function(){
 	});
 //works sliders
 //
-	$('#carousel-1, #carousel-2, #carousel-3').carousel({
-		interval: false
-	})
+	$('.carousel-control').on("click", function(){ 
+		$(this).parent().carousel({interval: 4500, pause: "true"});
+	});
 
 //SVG Font Icons
 	var url ='svg/streamline-icons.svg';
