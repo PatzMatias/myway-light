@@ -90,6 +90,14 @@ $(document).ready(function(){
 
 });
 
+	$('#contactForm').ajaxForm(options);
+	function showRequest(formData, jqForm, options) {
+		var queryString = $.param(formData);
+			return true;
+		}
+	function showResponse(responseText, statusText) {
+		}
+
 
 //lightbox plug-in integration
 $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
